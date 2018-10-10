@@ -1,0 +1,20 @@
+print ("Special cases are fun.\n");
+
+function F() {
+   this.x = 9;
+   return {
+      x : 21
+   };
+}
+a = new F();
+print (a.x);
+print ("\n");
+
+function G() {
+   this.x = 9;
+   return 12;
+}
+b = new G();
+print (b.x);
+print ("\n");
+

@@ -1,0 +1,11 @@
+a = {
+   x : 1,
+   f : function () { this.x = this.x + 8; },
+   y : 2
+};
+
+a.f();
+print (a.x);
+print ("\n");
+print (a.y);
+print ("\n");

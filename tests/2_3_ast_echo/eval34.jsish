@@ -1,0 +1,10 @@
+var x = 0;
+
+function f() {
+   x = x + 1;
+   return { f : function () { } };
+}
+
+f().f();
+print (x);
+print ("\n");

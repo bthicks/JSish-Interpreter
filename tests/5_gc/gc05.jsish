@@ -1,0 +1,9 @@
+outer = {next: {}};
+
+inUse;
+
+outer = undefined;
+
+gc;
+
+inUse;

@@ -1,0 +1,12 @@
+var x;
+(a = {
+x:1, f:(function ()
+{
+(x = 27);
+}
+), y:2});
+(a.f)();
+print (a.x);
+print "\n";
+print (a.y);
+print "\n";

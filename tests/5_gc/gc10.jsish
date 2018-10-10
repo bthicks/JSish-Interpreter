@@ -1,0 +1,25 @@
+function g()
+{
+   ({});
+
+   gc;
+}
+
+function f()
+{
+   var a = {};
+
+   inUse;
+
+   g();
+
+   a = undefined;
+
+   inUse;
+
+   g();
+}
+
+f();
+
+

@@ -1,0 +1,23 @@
+function g()
+{
+   ({});
+
+   gc;
+}
+
+function f()
+{
+   var a = {};
+
+   inUse;
+
+   g();
+
+   inUse;
+
+   g();
+}
+
+f();
+
+

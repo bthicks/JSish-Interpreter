@@ -1,0 +1,8 @@
+(a = {
+});
+((a.x) = 1);
+((a.y) = 1);
+print (a.x);
+print "\n";
+print (a.y);
+print "\n";

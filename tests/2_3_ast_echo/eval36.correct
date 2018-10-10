@@ -1,0 +1,14 @@
+var x = 0;
+function f()
+{
+(x = (x + 1));
+inUse;
+return (function ()
+{
+gc;
+}
+);
+}
+(new f())();
+print x;
+print "\n";

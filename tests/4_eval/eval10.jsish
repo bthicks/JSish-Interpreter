@@ -1,0 +1,28 @@
+a = {
+   x : 1,
+   y : 2,
+   f : function (that) {
+      print (that.x);
+      print ("\n");
+      print (that.y);
+      print ("\n");
+
+      that.x = that.x + 9;
+
+      print (that.x);
+      print ("\n");
+      print (that.y);
+      print ("\n");
+   }
+};
+print (a.x);
+print ("\n");
+print (a.y);
+print ("\n");
+
+a.f(a);
+
+print (a.x);
+print ("\n");
+print (a.y);
+print ("\n");

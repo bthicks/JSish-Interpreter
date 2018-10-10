@@ -1,0 +1,8 @@
+(a = {
+});
+((a.f) = (function ()
+{
+print "in f\n";
+}
+));
+(a.f)();

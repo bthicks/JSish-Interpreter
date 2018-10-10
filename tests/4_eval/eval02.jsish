@@ -1,0 +1,3 @@
+a = {};
+print (typeof a);
+print ("\n");

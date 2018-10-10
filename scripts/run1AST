@@ -1,0 +1,13 @@
+#!/bin/csh -f
+# test one and do diff
+
+set b = `basename ${2} .jsish`
+set dir = `dirname ${2}`
+
+${SML} @SMLload=${1} ${dir}/${b}.jsish >&! ${dir}/${b}.output
+${SML} @SMLload=${1} ${dir}/${b}.output >&! ${dir}/${b}.second
+
+diff -wb $dir/$b.output $dir/$b.second
+diff -wb $dir/$b.correct $dir/$b.second
+rm $dir/$b.output
+rm $dir/$b.second

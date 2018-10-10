@@ -1,0 +1,12 @@
+function f()
+{
+   gc;
+   return {};
+}
+
+print f() == f();
+print "\n";
+
+inUse;
+gc;
+

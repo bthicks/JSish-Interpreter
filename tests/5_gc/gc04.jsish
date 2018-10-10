@@ -1,0 +1,10 @@
+inner = {};
+outer = {next: inner};
+
+inner = undefined;
+
+inUse;
+
+gc;
+
+inUse;

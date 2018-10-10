@@ -1,0 +1,12 @@
+function Point(x, y) {
+   this.x = x;
+   this.y = y;
+}
+
+var p = new Point(1,2);
+
+print (p.x);
+print ("\n");
+print (p.y);
+print ("\n");
+

@@ -1,0 +1,19 @@
+(a = {
+});
+((a.x) = 1);
+((a.o) = {
+});
+(((a.o).x) = 2);
+((a.y) = 3);
+print (typeof a);
+print "\n";
+print (a.x);
+print "\n";
+print (typeof (a.o));
+print "\n";
+print ((a.o).x);
+print "\n";
+print (a.y);
+print "\n";
+print (a.z);
+print "\n";

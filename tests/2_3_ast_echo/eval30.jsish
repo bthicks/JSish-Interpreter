@@ -1,0 +1,10 @@
+var x = 0;
+
+function f(a, b)
+{
+   print x;
+   print "\n";
+}
+f.x = 9;
+
+var o = new f(2, 3);

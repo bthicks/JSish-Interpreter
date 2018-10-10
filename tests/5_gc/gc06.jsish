@@ -1,0 +1,11 @@
+outer = {next: {}};
+
+outer.next.cycle = outer;
+
+inUse;
+
+outer = undefined;
+
+gc;
+
+inUse;

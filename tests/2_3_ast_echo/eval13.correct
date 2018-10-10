@@ -1,0 +1,21 @@
+(a = (function ()
+{
+print "in function a\n";
+return {
+b:{
+c:(function ()
+{
+print "in function c\n";
+return {
+d:{
+e:{
+f:(function ()
+{
+print "in function f\n";
+}
+)}}};
+}
+)}};
+}
+));
+(((((a().b).c)().d).e).f)();

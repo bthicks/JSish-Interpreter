@@ -1,0 +1,14 @@
+var x = 2;
+function F() {
+   print (this.x);
+   print ("\n");
+   this.x = 19;
+   print (this.x);
+   print ("\n");
+}
+
+new F();
+F();
+
+print (x);
+print ("\n");

@@ -1,0 +1,26 @@
+function Point(x, y) {
+   this.x = x;
+   this.y = y;
+}
+
+function Rectangle(topLeft, botRight) {
+   this.area = function () {
+      return (botRight.x - topLeft.x) * (topLeft.y - botRight.y);
+   };
+}
+
+var p1 = new Point(0, 5);
+var p2 = new Point(5, 1);
+
+var rect1 = new Rectangle(p1, p2);
+var rect2 = new Rectangle(p1, p2);
+
+print (rect1.area());
+print ("\n");
+print (rect2.area());
+print ("\n");
+
+print (rect1 == rect2);
+print ("\n");
+print (rect1.area == rect2.area);
+print ("\n");

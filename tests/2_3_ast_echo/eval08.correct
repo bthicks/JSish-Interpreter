@@ -1,0 +1,17 @@
+(a = {
+x:1, y:2, f:(function ()
+{
+print "function f\n";
+}
+)});
+print (a.x);
+print "\n";
+(a.f)();
+print (a.y);
+print "\n";
+((a.x) = ((a.x) + 1));
+((a.y) = ((a.y) * 2));
+print (a.x);
+print "\n";
+print (a.y);
+print "\n";

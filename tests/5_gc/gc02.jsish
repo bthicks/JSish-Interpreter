@@ -1,0 +1,8 @@
+o = {};
+
+inUse;
+
+o = undefined;
+
+gc;
+inUse;

@@ -1,0 +1,27 @@
+function Point(x, y)
+{
+((this.x) = x);
+((this.y) = y);
+}
+function Rectangle(topLeft, botRight)
+{
+((this.topLeft) = topLeft);
+((this.botRight) = botRight);
+((this.area) = (function ()
+{
+return ((((this.botRight).x) - ((this.topLeft).x)) * (((this.topLeft).y) - ((this.botRight).y)));
+}
+));
+}
+var p1 = (new Point(0, 5));
+var p2 = (new Point(5, 1));
+var rect1 = (new Rectangle(p1, p2));
+print (rect1.area)();
+print "\n";
+((rect1.perimeter) = (function ()
+{
+return (((((this.botRight).x) - ((this.topLeft).x)) + (((this.topLeft).y) - ((this.botRight).y))) * 2);
+}
+));
+print (rect1.perimeter)();
+print "\n";

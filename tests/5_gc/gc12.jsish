@@ -1,0 +1,26 @@
+function printIt()
+{
+   inUse;
+   gc;
+   print "end\n";
+}
+
+function create(f)
+{
+   return function() {
+      var a = {};
+      return function() { print "one chain\n"; f(); };
+   }();
+}
+
+f = create(printIt);
+g = create(f);
+h = create(g);
+
+inUse;
+gc;
+
+h();
+
+gc;
+inUse;

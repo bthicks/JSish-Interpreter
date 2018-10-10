@@ -1,0 +1,13 @@
+function Point(x, y)
+{
+((this.x) = x);
+((this.y) = y);
+}
+var p = (new Point(1, 2));
+var bad = Point(4, 3);
+print (p.x);
+print "\n";
+print (p.y);
+print "\n";
+print bad;
+print "\n";

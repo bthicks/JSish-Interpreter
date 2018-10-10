@@ -1,0 +1,16 @@
+function create(i)
+{
+   gc;
+   return {i:i};
+}
+
+({f: function (x, y)
+      {
+         print x.i;
+         print "\n";
+         print y.i;
+         print "\n";
+      }}).f(create(1), create(2));
+
+inUse;
+gc;

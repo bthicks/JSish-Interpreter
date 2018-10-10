@@ -1,0 +1,11 @@
+(a = {
+b:{
+c:{
+d:{
+e:{
+f:(function ()
+{
+print "in function f\n";
+}
+)}}}}});
+(((((a.b).c).d).e).f)();

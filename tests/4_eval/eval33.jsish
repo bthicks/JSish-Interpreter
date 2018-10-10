@@ -1,0 +1,23 @@
+var o = {
+   x : 2,
+   f : function () { this.x = 9; }
+};
+
+print o.x;
+print "\n";
+var o2 = new o.f();
+
+print o.x;
+print "\n";
+
+print o2.x;
+print "\n";
+
+o2.x = 7;
+o.f();
+
+print o.x;
+print "\n";
+
+print o2.x;
+print "\n";

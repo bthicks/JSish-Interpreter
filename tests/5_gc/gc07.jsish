@@ -1,0 +1,13 @@
+inner = {};
+outer = {next: inner};
+other = {that: inner};
+
+inner = undefined;
+
+inUse;
+
+outer = undefined;
+
+gc;
+
+inUse;

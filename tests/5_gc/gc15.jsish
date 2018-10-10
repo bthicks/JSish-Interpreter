@@ -1,0 +1,26 @@
+function create()
+{
+   gc;
+   return {x:1};
+}
+
+function f(a, b, c, d)
+{
+   print a.x;
+   print "\n";
+   print b.x;
+   print "\n";
+   print c.x;
+   print "\n";
+   print d.x;
+   print "\n";
+   gc;
+}
+
+f(create(), create(), create(), create());
+inUse;
+
+new f(create(), create(), create(), create());
+inUse;
+
+gc;

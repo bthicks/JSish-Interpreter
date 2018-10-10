@@ -1,0 +1,7 @@
+#!/bin/csh -f
+
+foreach i ( tests/${2}/*.jsish )
+  echo ==== $i ====
+  ${1} ${3} $i
+end
+

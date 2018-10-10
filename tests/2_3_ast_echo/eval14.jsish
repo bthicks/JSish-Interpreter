@@ -1,0 +1,7 @@
+a = {
+   x : 1,
+   f : function () { print (this.x); print ("\n"); },
+   y : 2
+};
+
+a.f();

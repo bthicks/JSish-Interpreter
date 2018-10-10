@@ -1,0 +1,25 @@
+function createClosure()
+{
+   var a = {i:1};
+
+   return function (x, y)
+      {
+         print a.i;
+         print "\n";
+         print x.i;
+         print "\n";
+         print y.i;
+         print "\n";
+      };
+}
+
+function create(i)
+{
+   gc;
+   return {i:i};
+}
+
+createClosure()(create(1), create(2));
+
+inUse;
+gc;

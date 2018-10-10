@@ -1,0 +1,23 @@
+function create()
+{
+   var a = {};
+   gc;
+   return a;
+}
+
+o = { a: create(), b: create(), c: create() };
+
+inUse;
+
+print o.a;
+print "\n";
+
+print o.b;
+print "\n";
+
+print o.c;
+print "\n";
+
+o = undefined;
+gc;
+inUse;

@@ -1,0 +1,16 @@
+#!/bin/tcsh -f
+# test one and do diff
+
+set output = compilation.${1}.output
+
+${SML} >&! ${output} << END
+use "${1}";
+${2}
+SMLofNJ.exportFn ("${4}", ${3});
+END
+if ${status} then
+   cat ${output}
+endif
+rm ${output}
+ls ${4}.* >&! /dev/null
+exit ${status}

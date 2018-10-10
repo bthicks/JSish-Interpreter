@@ -1,0 +1,1 @@
+Modify the runall script to stop regression testing (set reg_test to 0).

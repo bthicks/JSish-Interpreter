@@ -1,0 +1,17 @@
+function create(o)
+{
+   return function() {
+      var a = {};
+      return function() { a = undefined; };
+   }();
+}
+
+f = create({});
+
+inUse;
+gc;
+
+f();
+
+gc;
+inUse;

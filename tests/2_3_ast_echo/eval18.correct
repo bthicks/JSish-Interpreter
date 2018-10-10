@@ -1,0 +1,13 @@
+(a = {
+x:1, f:(function ()
+{
+((this.z) = 4);
+}
+), y:2});
+(a.f)();
+print (a.x);
+print "\n";
+print (a.y);
+print "\n";
+print (a.z);
+print "\n";

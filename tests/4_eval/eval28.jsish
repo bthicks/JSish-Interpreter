@@ -1,0 +1,11 @@
+function f() {
+   return {
+      g : {
+         c : function() { return "gnarly code"; }
+      }
+   };
+}
+
+a = new new function() { this.f = f; }().f().g.c();
+print (a);
+print ("\n");

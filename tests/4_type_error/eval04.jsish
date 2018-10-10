@@ -1,0 +1,13 @@
+var a = {
+   f : function (x) {
+      if (x > 0) {
+         return this;
+      }
+      else {
+         return x;
+      }
+   }
+};
+
+print (a.f(1).y);
+print (a.f(-1).y);
